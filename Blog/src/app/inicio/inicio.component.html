@@ -1,0 +1,12 @@
+<br>
+<br>
+<br>
+@for (elemento of articulos; track $index) {
+<div class="gallery">
+    <a [routerLink]="['/detalle',elemento.id]">
+      <img src="{{elemento.imagen}}" alt="{{elemento.destino}}" width="600" height="400">
+    </a>
+    <div class="desc">{{elemento.descripcion}}</div>
+  </div>
+}
+  
