@@ -1,0 +1,33 @@
+<br>
+<br>
+<br>
+<h1>CONTACTA CON NOSOTROS</h1>
+<p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis officiis consequatur reprehenderit ducimus reiciendis autem, aliquam voluptatum illum, totam sapiente corporis nam? Ex quod est quia dolorem impedit quas laboriosam.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nihil, vel natus animi repudiandae illum accusantium repellendus accusamus eius at ea porro aspernatur, ducimus voluptatibus iusto laborum necessitatibus, sequi harum.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium similique molestias aspernatur dolor repudiandae ex? Iste provident ipsa illum doloremque nostrum aliquam. Tempora expedita praesentium in officiis obcaecati recusandae quam!
+</p>
+<h2>Formulario de contacto</h2>
+<body>
+
+<div id="formulario">
+<label>Correo electrónico: </label>
+<input type="email" [(ngModel)]="correo"  placeholder="Escriba su correo ">
+<br>
+<label>Nombre: </label>
+<input type="text" [(ngModel)]="nombre" placeholder="Escriba su nombre ">
+<br>
+<label>Teléfono: </label>
+<input type="tel" [(ngModel)]="telefono" placeholder="Escriba su teléfono ">
+<br>
+<label>Comentario: </label>
+<textarea [(ngModel)]="comentario" cols="60" rows="5">Escriba su comentario</textarea>
+<br>
+<button (click)="enviarInfo()">Enviar información</button>
+</div>
+</body>
+<div>
+    @if(enviado){
+        <p>{{mensaje}}</p>
+    }
+</div>

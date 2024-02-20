@@ -1,0 +1,28 @@
+<form action="">
+<h2>Formulario de inscripción de curso</h2>
+Escriba su nombre :<input type="text" [(ngModel)]="nombre">
+<br>
+Escriba su dni :<input type="text" [(ngModel)]="dni">
+<br>
+Escriba su edad :<input type="number" [(ngModel)]="edad">
+<br>
+Escriba el nombre del curso : 
+<select [(ngModel)]="cursoSeleccionado" >
+   <option value="IFCD0110">Desarrollo web</option>
+   <option value="IFCD0111">Programación estructurado</option>
+   <option value="IFCD0112">Programación Orientada a Objetos</option>
+</select>
+<br>
+Escriba el nivel de estudio : 
+<select [(ngModel)]="nivelEsutdio" >
+   <option value="ESO">ESO</option>
+   <option value="Bachillerato">Bachillerato</option>
+   <option value="FP">FP</option>
+</select>
+<br>
+<button> Enviar</button>
+<br>
+<textarea rows="5" cols="45">
+    
+</textarea>
+</form>

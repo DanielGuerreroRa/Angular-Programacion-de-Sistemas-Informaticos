@@ -1,0 +1,26 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    Size: 381 x 310
+}
+  
+
+h1 {
+    
+  color: rgb(52, 9, 137);
+  text-align: center;
+}
+
+body {
+    background-color: #F0F8FF;
+}
+ button {
+  background-color: #35025b; /* Green */
+  border: none;
+  color: rgb(231, 229, 237);
+  padding: px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+

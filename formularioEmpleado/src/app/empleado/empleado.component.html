@@ -1,0 +1,30 @@
+<h1>Registro de empleados</h1>
+<div>
+    <label>Nombre: </label>
+    <input type="text" [(ngModel)]="nombre" placeholder="Escriba su nombre">
+    <br>
+    <label>Fecha de nacimiento: </label>
+    <input type="date" [(ngModel)]="fechaNacimiento">
+    <br>
+    <label>Nacionalidad: </label>
+    <select [(ngModel)]="nacionalidad">
+        <option value="Española">Española</option>
+        <option value="Britanica">Britanica</option>
+        <option value="Rusa">Rusa</option>
+        <option value="Americana">Americana</option>
+        <option value="Mexicana">Mexicana</option>
+    </select>
+    <br>
+    <label>Género: </label>
+    Mujer :<input type="radio" name="genero" [(ngModel)]="genero" value="mujer">
+    Hombre :<input type="radio" name="genero" [(ngModel)]="genero" value="hombre">
+    Otros :<input type="radio" name="genero" [(ngModel)]="genero" value="otro">
+    <br>
+    <label>Lenguaje de Programación: </label>
+    C++<input type="checkbox" [(ngModel)]="cMas">
+    Java<input type="checkbox" [(ngModel)]="java">
+    JS<input type="checkbox" [(ngModel)]="js">
+    Python<input type="checkbox" [(ngModel)]="python">
+    <br>
+    <button (click)="mostrarInfo()">Enviar la información </button>
+</div>

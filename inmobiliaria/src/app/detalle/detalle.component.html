@@ -1,0 +1,15 @@
+<h1>Detalle de la casita que te vas a comprar</h1>
+<table>
+    <tr>
+      <th>Referencia</th>
+      <th>Imagen</th>
+      <th>Descripcion</th>
+    </tr>
+    @for(elemento of inmuebles; track elemento.referencia) {
+    <tr>
+        <td>{{ elemento.referencia }}</td>
+        <td><img src="{{ elemento.img }}" alt="" /></td>
+        <td>{{ elemento.descripcion }}</td> 
+    </tr>
+    }
+  </table>

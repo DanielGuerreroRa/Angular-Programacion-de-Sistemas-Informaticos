@@ -1,0 +1,11 @@
+<h2>Iscrpción al curso</h2>
+<p>Asignaturas seleccioadas</p>
+<ul>
+@for (elemento of inscripcion; track $index) {
+    <li>{{elemento}}</li>
+}
+</ul>
+<app-hijo>
+    (eventoHaciaPadre)="agregarAsignatura($event)"
+</app-hijo>
+

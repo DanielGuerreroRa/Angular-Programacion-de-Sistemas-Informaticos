@@ -1,0 +1,33 @@
+<h1>Vuelos</h1>
+<label>Origen: </label>
+<select [(ngModel)]="origen">
+    @for (elemento of ciudades; track $index) {
+        <label>{{elemento}}</label>
+        <option value="{{elemento}}">{{elemento}}</option>
+    }
+</select>
+<br>
+<label>Destino: </label>
+<select [(ngModel)]="destino">
+    @for (elemento of ciudades; track $index) {
+        @if (elemento !== origen) {
+    
+        <option value="{{elemento}}">{{elemento}}</option>
+    }
+}
+</select>
+<br>
+<label>Fecha de ida: </label>
+<input type="date" [(ngModel)]="fechaIda">
+<br>
+<label>Fecha de vuelta: </label>
+<input type="date" [(ngModel)]="fechaVuelta">
+<br>
+<label>Número de pasajeros </label>
+<select [(ngModel)]="numeroPasajeros">
+    <option *ngFor="let elemento of numerosPasajeros" [value]="elemento">{{elemento}}</option>
+</select>
+<div>
+    <button (click)="mostrarInfo()">Mostrar Información</button>
+
+    

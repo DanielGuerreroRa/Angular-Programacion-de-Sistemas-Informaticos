@@ -1,0 +1,13 @@
+table {
+    border-collapse: collapse;
+    width: 90%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 2px solid coral;
+  }
+  
+  tr:hover {background-color: coral;}

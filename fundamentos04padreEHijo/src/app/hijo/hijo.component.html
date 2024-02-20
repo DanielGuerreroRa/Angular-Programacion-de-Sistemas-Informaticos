@@ -1,0 +1,10 @@
+<h1>Componente Hijo</h1>
+<h3>Iformación recibida desde el padre</h3>
+<button (click)="agregar()">Añadir alumno</button>
+<p>{{datoHijo}}</p>
+<h3>Lista de Alumnos - Datos del Array</h3>
+<ol>
+@for (elemento of alumnos; track $index) {
+    <li>{{elemento}}</li>
+}
+</ol>

@@ -1,0 +1,29 @@
+<br>
+<br>
+<br>
+<h1>TIENDA ONLINE DE PRODUCTOS INFORMATICOS</h1>
+
+<div>
+   
+    <table>
+        <tr>
+            <th>Poducto</th>
+            <th>Nombre</th>
+            <th>Descrpción</th>
+            <th>Imagen</th>
+            <th>Precio</th>
+        </tr>
+        
+            @for (elemento of productos; track elemento.productoId) {
+              <tr>
+                <td>{{elemento.productoId}}</td>
+              <td>{{elemento.nombre}}</td>
+              <td>{{elemento.descripcion}}</td>
+              <td><img src="{{elemento.imagen}}" alt="{{elemento.nombre}}" width="13%"></td>
+              <td>{{elemento.precio}}</td>
+            
+        </tr>}
+ 
+    </table>
+
+</div>

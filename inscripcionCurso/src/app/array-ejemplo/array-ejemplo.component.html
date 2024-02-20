@@ -1,0 +1,13 @@
+<h3>Lista de nombres</h3>
+<ul>
+    @for (elemento of nombres; track $index) {
+        <li>{{elemento}}</li>
+    }
+<div>
+    <label>Escriba el nombre</label>
+    <input type="text" [(ngModel)]="nombre")]>
+    <button (click)="agregar()">Agregar nombre</button>
+    <button (click)="eliminar()">Eliminar el ultimo nombre</button>
+    <br>
+    <button (click)="recorrerArray()">Recorrer el array</button>
+</div>

@@ -1,0 +1,9 @@
+<button (click)="agregar()">Añadir producto</button>
+
+<ol>
+    @for (elemento of productos; track $index) {
+        <li>{{elemento}}</li>
+
+    }
+    
+</ol>

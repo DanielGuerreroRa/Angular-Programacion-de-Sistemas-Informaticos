@@ -1,0 +1,10 @@
+<h1>Administrador</h1>
+<h2>Usuarios que dependen de este administrador</h2>
+<ul>
+    @for (elemento of usuarios; track elemento.id) {
+        <li>{{elemento.id}} {{elemento.nombre}}</li>
+    }@empty {
+        <p>No hay datos que mostrar</p>
+    }
+    
+</ul>

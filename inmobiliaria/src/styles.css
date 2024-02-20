@@ -1,0 +1,27 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    Size: 381 x 310
+}
+  
+
+h1 {
+    
+  color:seagreen;
+  text-align: center;
+}
+
+table {
+    background-color: ghostwhite;
+
+
+
+    background-color: seagreen; 
+
+}
+ tr {
+    
+    background-color: white;
+ }
+ th{
+    background: linear-gradient(seagreen ,white);
+ }

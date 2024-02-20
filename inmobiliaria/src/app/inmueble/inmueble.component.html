@@ -1,0 +1,24 @@
+<h1>Inmobilaria Tu Hogar</h1>
+<div>
+  <table>
+    <tr>
+      <th>Inmuebles disponibles</th>
+      
+    </tr>
+    @for(elemento of inmuebles; track elemento.referencia) {
+    <tr>
+      <a
+        routerLink="/detalle"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+      >
+        <td>{{ elemento.referencia }}</td>
+       
+        <td><img src="{{ elemento.img }}" alt="" /></td>
+        <td>{{ elemento.descripcion }}</td>
+      </a>
+      <router-outlet></router-outlet>
+    </tr>
+    }
+  </table>
+</div>

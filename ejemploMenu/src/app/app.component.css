@@ -1,0 +1,18 @@
+a{
+border: 3px solid whitesmoke;
+background-color: #ab4493;
+font-size: 35px;
+color: white;
+border-radius: 2%;
+	float: left;
+	position:relative;
+	color: #FFFFFF;
+	display: block;
+	font: bold 25px/25px sans-serif;
+	padding: 10px 25px;
+	
+	text-decoration: none;
+}
+a :hover{
+	background: purple;
+}

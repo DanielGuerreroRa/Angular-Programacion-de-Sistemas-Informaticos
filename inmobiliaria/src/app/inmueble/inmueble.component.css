@@ -1,0 +1,29 @@
+table {
+    border: 1px;
+}
+img{
+    width: 200px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+
+  }
+  
+
+
+  table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;      }
+
+th {     font-size: 18px;     font-weight: normal;     padding: 8px;     background: seagreen;
+    border-top: 4px solid seagreen;    border-bottom: 1px solid #fff; color:floralwhite }
+
+td {    padding: 8px;     background: #e3f7ea;     border-bottom: 1px solid #fff;
+      border-top: 1px solid transparent; }
+
