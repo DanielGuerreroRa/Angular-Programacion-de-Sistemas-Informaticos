@@ -16,7 +16,9 @@
         
             @for (elemento of productos; track elemento.productoId) {
               <tr>
-                <td>{{elemento.productoId}}</td>
+                <td>
+                    <a [routerLink]="['/detalle',elemento.productoId]">
+                    {{elemento.productoId}} </a> </td>
               <td>{{elemento.nombre}}</td>
               <td>{{elemento.descripcion}}</td>
               <td><img src="{{elemento.imagen}}" alt="{{elemento.nombre}}" width="13%"></td>

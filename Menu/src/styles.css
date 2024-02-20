@@ -21,7 +21,11 @@ table {
  tr {
     
     background-color: white;
+    
  }
  th{
     background: linear-gradient(#ab4493 ,white);
+ }
+ td{
+  padding: 15px;
  }

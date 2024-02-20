@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .tabla {
+    max-width: 600px; /* Establecer el ancho máximo de la tabla */
+    width: 100%;
+    border-collapse: collapse; /* Colapsar los bordes de la tabla */
+  }
+  
+  .centrado {
+    text-align: center;
+  }
+  
+  .imagen {
+    max-width: 100%; /* Establecer el ancho máximo de la imagen */
+    height: auto;
+    max-height: 200px; /* Establecer la altura máxima de la imagen (opcional) */
+  }
