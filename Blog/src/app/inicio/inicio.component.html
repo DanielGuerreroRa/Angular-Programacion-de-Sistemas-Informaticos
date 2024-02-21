@@ -1,12 +1,12 @@
-<br>
-<br>
-<br>
-@for (elemento of articulos; track $index) {
-<div class="gallery">
-    <a [routerLink]="['/detalle',elemento.id]">
-      <img src="{{elemento.imagen}}" alt="{{elemento.destino}}" width="600" height="400">
+@for(elemento of articulos; track elemento.id){
+  <div class="gallery">
+      
+       <img src="{{elemento.imagen}}" alt="{{elemento.titulo}}" width="600" height="400">
+     
+      <div class="desc titulo">{{elemento.titulo}}</div>
+      <div class="desc">{{elemento.resumen}}</div>
+      <a [routerLink]="['/detalle',elemento.id]">
+      <button class="button button2">Más información</button>
     </a>
-    <div class="desc">{{elemento.descripcion}}</div>
   </div>
-}
-  
+  }

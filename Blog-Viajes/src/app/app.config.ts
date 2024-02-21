@@ -4,5 +4,5 @@ import { provideRouter, withComponentInputBinding, withDebugTracing } from '@ang
 import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes, withComponentInputBinding(), withDebugTracing())]
+  providers: [provideRouter(routes, withComponentInputBinding(), withDebugTracing())],
 };

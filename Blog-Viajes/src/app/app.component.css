@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-color: #5999da; /* Cambia el color de fondo según tus preferencias */
+  }
+  
+  h1 {
+    color: #006400; /* Color verde oscuro (código hexadecimal) */
+    text-align: center;
+    font-size: 100px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+  img {
+    border-bottom: 50px solid #5999da; /* Agregar un borde de color a la parte inferior de la foto */
+    max-width: 100%;
+    height: auto;
+  }
