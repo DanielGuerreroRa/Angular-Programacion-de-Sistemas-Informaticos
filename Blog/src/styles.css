@@ -35,3 +35,6 @@ h1{
   .button2:hover {
     box-shadow: 0 12px 16px 0 rgba(246, 246, 246, 0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
+  hr{
+    color: #25de10;
+  }

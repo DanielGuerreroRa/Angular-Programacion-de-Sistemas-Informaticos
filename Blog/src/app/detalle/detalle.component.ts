@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ArticuloServicioService } from '../articulo-servicio.service';
+import { ArticuloServicioService } from '../_servicio/articulo-servicio.service';
 
 @Component({
   selector: 'app-detalle',

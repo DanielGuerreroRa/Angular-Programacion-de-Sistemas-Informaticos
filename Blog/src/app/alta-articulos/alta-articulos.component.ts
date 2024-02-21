@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { Articulo } from '../_modelo/articulo';
-import { ArticuloServicioService } from '../articulo-servicio.service';
+import { ArticuloServicioService } from '../_servicio/articulo-servicio.service';
 
 @Component({
   selector: 'app-alta-articulos',
