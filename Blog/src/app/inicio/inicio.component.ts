@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { ArticuloServicioService } from '../articulo-servicio.service';
 
 @Component({
   selector: 'app-inicio',
@@ -42,5 +43,9 @@ export class InicioComponent {
       "imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZPTZkuVdNFazqgFR2J2zQBqtdQiHBG0NhBA&usqp=CAU"
     },
   ]
+
+  constructor(private articuloS:ArticuloServicioService){
+    
+  }
 
 }
