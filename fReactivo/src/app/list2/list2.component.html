@@ -1,0 +1,20 @@
+<router-outlet></router-outlet>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Horas de Formación</th>
+    </tr>
+    @for(elemento of alumnos; track elemento.id){
+        <tr>
+            <td>{{ elemento.id }}</td>
+            <td>{{ elemento.nombre }}</td>
+            <td>{{ elemento.apellidos }}</td>
+            <td>{{ elemento.horasFormacion }}</td>
+            <td><a [routerLink]="['/modificar', elemento.id]">Modificar</a></td>
+        </tr>
+    }
+</table>
+<button routerLink="alta">Alta</button>

@@ -1,0 +1,13 @@
+
+<form [formGroup]="form" #form1="ngForm" (ngSubmit)="addModAlumno()">
+    ID: <input formControlName="nombre" type="text" required>
+    <br>
+    Nombre: <input formControlName="nombre" type="text" required>
+    <br>
+    Apellidos: <input formControlName="apellidos" type="text">
+    <br>
+    Horas Formación: <input formControlName="horasFormacion" type="number">
+    <br>
+    <button type="submit" [disabled]="form1.invalid">Enviar</button>
+    <button type="button" routerLink="">Cancelar</button>
+</form>
