@@ -23,7 +23,9 @@ export class AltaEmpleadoComponent {
   constructor(private servicio: EmpleadoService,private route: ActivatedRoute,private router:Router){}
 
   altaEmpleado(){
-    this.servicio.alta(this.e1).subscribe(()=>console.log("se ha dado de alta"));
+    this.servicio.alta(this.e1).subscribe(()=>{console.log("se ha dado de alta");
+    this.servicio.listar().subscribe(data =>
+      {this.servicio.empleadoCambio.next(data)})});
     this.router.navigate(['']);
   }
 

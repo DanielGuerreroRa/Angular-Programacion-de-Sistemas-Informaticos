@@ -1,0 +1,23 @@
+<h1>Empleados desde el back</h1>
+<table>
+    <caption>
+        Lista de empleados
+    </caption>
+    <tr>
+        <th>IdEmpleado</th>
+        <th>nombre</th>
+        <th>Dni</th>
+        <th>sueldo</th>
+    </tr>
+   @for(elemento of empleados;track elemento.idEmpleado){
+    <tr>
+        <td>{{elemento.idEmpleado}}</td>
+        <td>{{elemento.nombreEmpleado}}</td>
+        <td>{{elemento.dni}}</td>
+        <td>{{elemento.sueldo}}</td>
+    </tr>
+   } 
+</table>
+<button routerLink="alta">Alta de un nuevo Empleado</button>
+<router-outlet></router-outlet>
+<app-alta-empleado (avisoPadre)="recibirAviso($event)"></app-alta-empleado>
