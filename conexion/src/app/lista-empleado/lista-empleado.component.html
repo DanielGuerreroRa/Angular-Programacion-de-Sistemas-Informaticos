@@ -1,0 +1,24 @@
+<h1>Empleados desde el back</h1>
+<table>
+    <caption>
+        Lista de Empleados
+    </caption>
+    <tr>
+        <th>IdEmpleados</th>
+        <th>nombre</th>
+        <th>DNI</th>
+        <th>sueldo</th>
+    </tr>
+    @for(elemento of empleados; track elemento.idEmpleado){
+        <tr>
+            <td>{{elemento.idEmpleado}}</td>
+            
+            <td>{{elemento.nombreEmpleado}}</td>
+            
+            <td>{{elemento.dni}}</td>
+            
+            <td>{{elemento.sueldo}}</td>
+        </tr>
+    }
+</table>
+<app-alta-empleado></app-alta-empleado>

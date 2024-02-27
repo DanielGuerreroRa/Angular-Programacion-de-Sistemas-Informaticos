@@ -1,0 +1,16 @@
+<h1>Alta Empleado</h1>
+<div>
+    <label>ID Empleado </label>
+    <!-- <input type="number" [(ngModel)]="e1.idEmpleado" readonly> -->
+    <br>
+    <label>Nombre empleado: </label>
+    <input type="text" [(ngModel)]="e1.nombreEmpleado" placeholder="Escriba nombre empleado">
+    <br>
+    <label>DNI: </label>
+    <input type="text" [(ngModel)]="e1.dni" placeholder="Escriba el DNI">
+    <br>
+    <label>Sueldo: </label>
+    <input type="text" [(ngModel)]="e1.sueldo">
+    <br>
+    <button (click)="altaEmpleado()">Dar de alta</button>
+</div>
